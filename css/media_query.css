@@ -1,0 +1,207 @@
+/*-----------------------------------*\
+  #RESPONSIVE FOR 370PX
+\*-----------------------------------*/
+
+@media (min-width: 370px) {
+
+  /* ABOUT SECTION EDITS */
+
+  .about-table tr { flex-direction: row; }
+
+  .about-table th,
+  .about-table td { width: 50%; }
+
+}
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVE FOR 500PX
+\*-----------------------------------*/
+
+@media (min-width: 500px) {
+
+  /* VARIABLE */
+
+  :root {
+    --fs-1: 48px;
+    --fs-2: 30px;
+  }
+
+  .section-padding { padding: 80px 20px; }
+
+  /* NAVBAR */
+
+  .nav { padding: 100px 16%; }
+
+
+  /* HEADER INTRO */
+
+  .intro { padding: 80px 15%; }
+
+
+  /* ABOUT SECTION */
+
+  .content-card .card-head {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+
+ /* PORTFOLIO SECTION */
+
+  .portfolio-carousel-inner { width: 250%; }
+
+
+  /* SERVICE SECTION */
+
+  .service-card { display: flex; }
+
+  .service-card .card-head {
+    width: 70%;
+    min-width: 70%;
+  }
+
+  .service-card .card-footer {
+    width: 30%;
+    min-width: 30%;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    padding: 20px;
+    border-top: none;
+    border-left: 1px solid hsla(100, 100%, 100%, 0.05);
+  }
+
+
+
+  /* CONTACT SECTION */
+
+  .address address, .phone a { max-width: 300px; }
+
+
+  /* FOOTER SECTION */
+
+  .footer { padding: 50px 20px; }
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVE FOR 768PX
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+
+
+  /**
+   * VARIABLE 
+   */
+
+  :root { --fs-4: 30px; }
+
+
+  /**
+   * HEADER INTRO
+   */
+
+  .intro { padding: 80px 20%; }
+
+
+  /**
+   * NEWS & TIPS
+   */
+
+  .article-grid { grid-template-columns: 1fr 1fr; }
+
+
+  /**
+   * CONTACT
+   */
+
+  .contact-form .wrapper {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .contact-form .wrapper > div { width: 50%; }
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVE FOR 1024PX
+\*-----------------------------------*/
+
+@media (min-width: 1024px) {
+
+  .container {
+    display:        flex;
+    flex-direction: row-reverse;
+  }
+
+
+  .section-padding { padding: 80px 50px; }
+
+  /**
+   * HEADER 
+   */
+
+  header {
+    width: 40%;
+    height: 100vh;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    border-left: 1px solid hsla(100, 100%, 100%, 0.2);
+  }
+
+
+  /**
+   * NAVBAR 
+   */
+
+  .nav { padding: 100px 50px; }
+
+
+  /**
+   * HEADER INTRO
+   */
+
+  .intro { padding: 80px 30%; }
+
+
+  /* MAIN */
+
+  main {
+    width:  60%;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+
+ /* SCROLLBAR */
+
+  ::-webkit-scrollbar { width: 6px; }
+
+  ::-webkit-scrollbar-thumb { background: hsla(100, 100%, 100%, 0.2); }
+
+  ::-webkit-scrollbar-track { background: var(--eerie-black-dark); }
+
+  ::-webkit-scrollbar-track:hover { background: hsla(100, 100%, 100%, 0.05); }
+
+
+ /* FOOTER SECCTION EDITS */
+
+  .footer { padding: 50px; }
+
+}
